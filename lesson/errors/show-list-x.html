@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiển thị danh sách sản phẩm, bài viết theo hàng ngang - Flex</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* khi các item dính sát vào nhau thì ta phải thiết lập margin cho nó, nhưng phải margin vào đối tượng mà to bao quát nhất chứ 
+      không phải margin vào thành phần bên trong nó */
+      #wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      ul.list-product {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul.list-product li {
+        flex-basis: 33.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+      }
+
+      ul.list-product li .product-item {
+        border: 1px solid #333;
+      }
+    </style>
+    <div id="wrapper">
+      <h1>Hiển thị danh sách sản phẩm, bài viêt theo hàng ngang - Flex</h1>
+      <!-- Danh sách -->
+      <ul class="list-product">
+        <li>
+          <div class="product-item">
+            <!-- Ảnh 
+                    Tiêu đề
+                    Giá
+                    Mua ngay -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?
+          </div>
+        </li>
+        <li>
+          <div class="product-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?</div>
+        </li>
+        <li>
+          <div class="product-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?</div>
+        </li>
+        <li>
+          <div class="product-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?</div>
+        </li>
+        <li>
+          <div class="product-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?</div>
+        </li>
+        <li>
+          <div class="product-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit atque voluptatibus velit nihil eligendi consequatur a
+            error, fugiat provident? Et, fugiat nam. Eaque incidunt molestiae
+            perferendis natus repudiandae, ducimus eligendi. Pariatur, odio
+            aperiam magnam temporibus totam mollitia corporis iure?</div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

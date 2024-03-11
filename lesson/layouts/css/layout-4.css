@@ -1,0 +1,47 @@
+#wrapper {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0px auto; */
+}
+.header {
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #e67e22;
+    padding: 17px;
+    color: white;
+}
+.wp-content {
+    display: flex;
+    flex-basis: 100%;
+    background-color: #f4f4f4;
+    min-height: 674px;
+}
+
+.wp-content .content {
+    flex-grow: 5;
+    flex-shrink: 2;
+    flex-basis: 70%;
+    background-color: #2ecc71;
+}
+
+.wp-content .sidebar {
+    flex-basis: 30%;
+    flex-grow: 3;
+   flex-shrink: 1;
+    background-color: #16a085;
+}
+
+.footer {
+    flex-basis: 100%;
+    padding: 17px;
+    flex-grow: 1;
+    background-color: #f1c40f;
+    color: white;
+}
+.f-20 {
+    font-size: 20px;
+}
+.text-center {
+    text-align: center;
+}

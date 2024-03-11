@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Css</title>
+</head>
+<body>
+    <style>
+        /* Transition là nên để ở lớp khi chưa có hover vì khi thả chuột ra thì vẫn kích hoạt thuộc tính transition,
+        còn nếu để ở lớp có hover thì khi nhả chuột nó sẽ không chạy transition */
+        .box {
+            width: 200px;
+            padding: 50px;
+            background-color: tomato;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.5s;
+        }
+        .box:hover {
+            width: 400px;
+            background-color: greenyellow;
+            /* All là toàn bộ thuộc tính trong phần tử đó sẽ được làm mềm từ từ */
+        }
+    </style>
+    <h1> Transition Css</h1>
+    <div class="box">Box</div>
+</body>
+</html>

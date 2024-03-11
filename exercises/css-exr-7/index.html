@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises 7</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      ul.list-product {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul.list-product li {
+        flex-basis: 33.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+      }
+
+      ul.list-product li .product-item {
+        border: 1px solid #cdcdcd;
+        position: relative;
+        padding: 5px;
+      }
+
+      ul.list-product li .product-item:hover {
+        border: 1px solid lightcoral;
+      }
+
+      .fs-20 {
+        font-size: 20px;
+      }
+
+      .fw-bold {
+        font-weight: bold;
+      }
+
+      .product-item .price {
+        display: block;
+        color: rgb(255, 179, 0);
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .product-item .content-des {
+        text-decoration: none;
+        display: block;
+        color: #16243e;
+        /* padding-bottom: 5px; */
+        margin: 0;
+      }
+
+      .product-item .buynow {
+        color: #ff5151;
+        font-size: 19px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+
+      .product-item .content-des:hover,
+      .product-item .buynow:hover {
+        cursor: pointer;
+      }
+
+      .product-item .saleoff {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    </style>
+    <h1 class="text-center">Exercises 7</h1>
+    <div id="wrapper">
+      <ul class="list-product">
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product1.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product5.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+            <div class="saleoff">
+              <img src="./images/sale.png" alt="saleoff" srcset="" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product11.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+            <div class="saleoff">
+              <img src="./images/sale.png" alt="saleoff" srcset="" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product9.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product11.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item text-center">
+            <a href="#">
+              <img src="./images/product9.jpg" alt="" srcset="" />
+            </a>
+            <span class="price fw-bold">499.999đ</span>
+            <p class="content-des">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="buynow">Mua ngay</a>
+            <div class="saleoff">
+              <img src="./images/sale.png" alt="saleoff" srcset="" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

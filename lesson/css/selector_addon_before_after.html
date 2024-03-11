@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Addon</title>
+</head>
+<body>
+    <style>
+        h1:before {
+            content: "⌛";
+            color: #f00;
+        }   
+        h1:after {
+            content: "⌛";
+            color: #f00;
+        }
+        .list-post a:after{
+            content: url("https://www.vssgroups.org/wp-content/uploads/2018/09/arrow-with-new-letter-icon-gif-animation.gif")
+        }
+        /* Icons font */
+    </style>
+    <h1>Selector Before After Addon</h1>
+    <ul class="list-post">
+        <li><a href="" class="new">Bài viết số 1</a></li>
+        <li><a href="" class="">Bài viết số 2</a></li>
+        <li><a href="" class="">Bài viết số 3</a></li>
+        <li><a href="" class="new">Bài viết số 4</a></li>
+    </ul>
+
+</body>
+</html>

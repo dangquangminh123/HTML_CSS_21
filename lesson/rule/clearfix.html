@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearFix</title>
+</head>
+<body>
+    <!-- Sập độ cao là hiện tượng xảy ra khi 1 khối cha có các khối con bên trong đồng loạt float dẫn đến độ cao của nó trở về 0
+    Giải pháp sử dụng class clearfix chống sập độ cao -->
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+        .clearfix {
+            clear: both;
+            display: block;
+        }
+        .box-parent {
+            width: 960px;
+            margin: 0px auto;
+            background-color: darkgoldenrod;
+        }
+        .box-left,
+        .box-right {
+            float: left;
+            min-height: 600px;
+        }
+
+        .box-left {
+            width: 600px;
+            /* background-color: burlywood; */
+        }
+        .box-right {
+            width: 360px;
+            /* background-color: cornflowerblue; */
+        }
+    </style>
+    <h1 class="text-center">Class clearfix</h1>
+    <!-- Cách 1 -->
+    <div class="box-parent clearfix">
+        <div class="box-left">
+            LEFT
+        </div>
+        <div class="box-right">
+            RIGHT
+        </div>
+    </div>
+    <!-- Cách 2 -->
+    <!-- <div class="box-parent">
+        <div class="box-left">
+            LEFT
+        </div>
+        <div class="box-right">
+            RIGHT
+        </div>
+        <div class="clearfix"></div>
+    </div> -->
+</body>
+</html>

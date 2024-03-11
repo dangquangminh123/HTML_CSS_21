@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Child</title>
+</head>
+<body>
+    <style>
+        /* ul li:first-child {
+            font-weight: bold;
+            color: red;
+        }
+
+        ul li:last-child {
+            font-weight: bold;
+            color: green;
+        } */
+
+        /* odd là vị trí phần tử số chẵn */
+        /* even là vị trí phần tử số lẻ */
+        /* ul li:nth-child(odd) {
+            font-weight: bold;
+            color: green;
+        }
+        
+        ul li:nth-child(even) {
+            font-weight: bold;
+            color: brown;
+        } */
+
+        /* 4n là các số vị trí của phần tử đó chia hết cho 4 */
+        ul li:nth-child(4n) {
+            font-weight: bold;
+            color: gold;
+        }
+    </style>
+    <h1>Child Selector</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <!-- <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <li>Item 2.3</li>
+                <li>Item 2.4</li>
+            </ul> -->
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Justify content</title>
+</head>
+<body>
+    <style>
+        /* justify-content là điều chỉnh vị trí các thành phần item bên trong 1 dev nào đó */
+        /* Space around là khoảng thừa dư của div chứa các item đó sẽ được đem đi chia đều ra cho các khoảng item */
+        /* Space between là ép sát 2 bên lề rồi còn dư thì chia đều cho các item nằm trong giữa */
+        .container {
+            display: flex;
+            background: gray;
+            flex-direction: row;
+            width: 1170px;
+            margin: 0px auto;
+            /* Flex wrap sẽ phát huy khi độ rộng các phần tử bên trong đó vượt quá độ width của thẻ đang chứa  */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+             justify-content: space-between; */
+            /* flex-direction: row-reverse
+             flex-direction: column
+             flex-direction: column-reverse*/
+        }
+        .box {
+            text-align: center;
+            width: 100px;
+            padding: 40px;
+            font-size: 18px;
+            background: greenyellow;
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <h1> Display Justify content</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+</html>

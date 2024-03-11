@@ -1,0 +1,2 @@
+alt + shift + f: Tự động căn chỉnh code
+

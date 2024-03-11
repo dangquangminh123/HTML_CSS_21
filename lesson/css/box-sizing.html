@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+  </head>
+  <body>
+    <style>
+        .box-1 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            margin-bottom: 20px;
+        }
+
+        .box-2 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            /* Khi dùng box-sizing thì mặc định độ rộng và độ cao sẽ như ban đầu không bị giãn ra */
+            box-sizing: border-box;
+        }
+    </style>
+    <h1>Box Sizing</h1>
+    <div class="box-1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum
+        itaque quisquam possimus perferendis, dolorem natus qui, debitis
+        dignissimos illo, eum minus in perspiciatis ex culpa reprehenderit!
+        Iusto, vel! Corporis.
+      </p>
+    </div>
+    <div class="box-2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum
+        itaque quisquam possimus perferendis, dolorem natus qui, debitis
+        dignissimos illo, eum minus in perspiciatis ex culpa reprehenderit!
+        Iusto, vel! Corporis.
+      </p>
+    </div>
+    <div class="box-3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum
+        itaque quisquam possimus perferendis, dolorem natus qui, debitis
+        dignissimos illo, eum minus in perspiciatis ex culpa reprehenderit!
+        Iusto, vel! Corporis.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Theo thuộc tính</title>
+</head>
+<body>
+    <!-- Selector theo thuộc tính 
+         1/ Selector tất cả các thẻ có thuộc tính: selector[attr]
+         2/ Selector các thẻ có thuộc tính bằng cụ thể giá trị nào đó: selector[attr = "value"]{}
+         3/Selector toàn bộ các thẻ có thuộc tính chứa giá trị nào đó: selector[attr *= "value"]{}
+         4/ Selector toàn bộ các thẻ có thuộc tính bắt đầu bằng giá trị nào: selector[attr ^= "value"]{}
+         5/ Selector toàn bộ các thẻ có thuộc tính kết thúc bằng giá trị nào :selector[attr $= "value"]{}
+     -->
+    <style>
+        a[href] {
+            color: cyan;
+        }
+        /* Các thuộc tính có giá trị cụ thể */
+        a[href="http://unitop.vn"] {
+            color: brown;
+        }
+
+        /* Các thuộc tính có chưa giá trị abcxyz */
+        a[href*="unitop"] {
+            color: green;
+        }
+
+        a[href$="com"] {
+            color: red;
+        }
+
+        a[href^="http"] {
+            color: yellow;
+        }
+    </style>
+    <h1>Attr Selector theo thuộc tính</h1>
+    <a href="http://unitop.vn">Php Master</a>
+    <a href="unitop.vn">Laravel Pro</a>
+    <a href="unitop.com">Jquery Master</a>
+    <a href="unitop.vn">Javascripts thực chiến</a>
+    <a href="http://google.com">Bootstrap AZ</a>
+
+</body>
+</html>

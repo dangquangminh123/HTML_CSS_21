@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struct</title>
+</head>
+<body>
+    <!-- Khi chưa rõ nội dung bên trong có độ cao bao nhiêu thì nên ưu tiên sử dụng min height để khi nội dung quá dài thì phần thẻ 
+    cha sẽ tự động dãn theo độ dài của nội dung, hoặc khi nội dung quá nhỏ thì độ dài sẽ tự co theo nội dung bên trong  -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        .bg-green {
+            background: green;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        #wp-content {
+            padding: 0px 0px;
+        }
+        
+        #wp-content #content {
+            width: 600px;
+            background: #f3f3f3;
+        }
+        #wp-content  #sidebar {
+            width: 360px;
+            background: #e1e1e1;
+        }
+
+        .min-height {
+            min-height: 500px;
+        }
+        .float-left {
+            float: left;
+        }
+        .float-right {
+            float: right;
+        }
+
+        .d-block {
+            display: inline-block;
+        }
+        .clear-both {
+            clear: both;
+        }
+
+        #footer {
+            clear: both;
+        }
+        .p-15 {
+            padding: 15px;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+
+         .clearfix {
+            clear: both;
+            display: block;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header" class="bg-green text-center text-white p-15">
+            Header
+        </div>
+        
+        <div id="wp-content">
+            <div class="clearfix"></div>
+            <div id="content" class="float-left d-block min-height p-15">
+                Content 
+            </div>
+
+            <div id="sidebar" class="min-height float-right p-15">
+                Sidebar
+            </div>
+
+        </div>
+        <div id="footer" class="bg-green text-center text-white p-10">
+            unitop.vn
+        </div>
+    </div>
+</body>
+</html>

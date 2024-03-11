@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises 6 css</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #wrapper {
+            max-width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px auto;
+        }
+
+        #header {
+            flex-basis: 100%;
+            /* width: 100%; */
+            flex-grow: 1;
+        }
+
+        #wp-content {
+          display: flex;
+          flex-basis: 100%;
+        }
+
+        #wp-content #content {
+            flex-basis: 600px;
+            flex-grow: 5;
+            background-color: #e8e8e8;
+           flex-shrink: 2;
+           min-height: 400px;
+        }
+
+        #wp-content #sidebar {
+            flex-basis: 360px;
+            background-color: #bdbdbd;
+           flex-grow: 3;
+           flex-shrink: 1;
+            min-height: 400px;
+        }
+
+        .bg-blue {
+            background: #009df8;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        #footer {
+            flex-basis: 100%;
+            /* width: 100%; */
+            flex-grow: 1;
+        }
+        .p-15 {
+            padding: 15px;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header" class="bg-blue text-center text-white p-15">
+            Layout web 2 Cột - Flex Css
+        </div>
+        
+        <div id="wp-content">
+            <div id="content" class="p-15">
+                Content 
+            </div>
+
+            <div id="sidebar" class="p-15">
+                Sidebar
+            </div>
+
+        </div>
+        <div id="footer" class="bg-blue text-center text-white p-10">
+            unitop.vn
+        </div>
+    </div>
+</body>
+</html>
